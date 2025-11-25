@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Focus Mode</title>
+</head>
+<body>
+  
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo-icon">◎</span>
+      <h1>Focus Mode</h1>
+    </div>
+    <span class="version-badge">v1.0</span>
+  </header>
+
+  <main>
+    <div class="hero-section">
+      <div class="domain-badge" id="currentDomain">Loading...</div>
+      
+      <button class="btn btn-primary btn-lg" id="startSelectionBtn">
+        <span class="icon">🎯</span>
+        Start Focusing
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stats-container">
+      <div class="stat-box">
+        <span class="stat-label">Distractions Hidden</span>
+        <span class="stat-value" id="hiddenCount">0</span>
+      </div>
+      <div class="stat-actions">
+        <button class="btn btn-ghost" id="viewListBtn">
+            View List
+        </button>
+        <button class="btn btn-ghost text-red" id="resetSiteBtn">
+            Reset
+        </button>
+      </div>
+    </div>
+
+    <div id="selectorsList" class="selectors-list" style="display: none;">
+      <div class="list-header">Hidden Elements</div>
+      <div class="selectors-container" id="selectorsContainer">
+        </div>
+    </div>
+
+    <button class="btn btn-secondary full-width" id="undoBtn" style="display: none;">
+      <span>↩️ Undo Last Hide</span>
+    </button>
+
+    <div class="divider"></div>
+
+    <div class="global-actions">
+        <div class="action-row">
+            <button class="btn btn-icon" id="exportBtn" title="Export Settings">
+                📤 Export
+            </button>
+            <button class="btn btn-icon" id="importBtn" title="Import Settings">
+                📥 Import
+            </button>
+        </div>
+        <button class="btn btn-text-danger" id="clearAllBtn">
+            Clear Global Data
+        </button>
+    </div>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
