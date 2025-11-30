@@ -1,4 +1,4 @@
-# Focus mode 
+![title logo](https://github.com/vanhaaggen/yt-focus-mode/blob/main/icons/readme-logo.png)
 
 A browser extension that lets you hide distracting elements on any website with a simple point-and-click interface.
 
