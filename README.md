@@ -1,4 +1,8 @@
+<img src="icons/icon128.png" align="left" width="128" height="128" alt="Focus Mode Icon">
+
 # Focus Mode
+
+<br clear="left"/>
 
 A browser extension that lets you hide distracting elements on any website with a simple point-and-click interface.
 
